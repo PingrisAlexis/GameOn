@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Reservation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header class="topnav" id="myTopnav">
+      
+      <div class="header-logo">
+        <img alt="logo GameOn" src="/img/logo_gameon.png">
+      </div>
+    
+      <div class="main-navbar">
+        
+        <a href="javascript:void(0);" class="icon" onclick="editNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+        
+        <div>
+          <a href="#" class="active">
+            <span>Accueil</span>
+          </a>
+      
+          <a href="#">
+            <span>Détails de l'évènement</span>
+          </a>
+      
+          <a href="#">
+            <span>À propos</span>
+          </a>
+      
+          <a href="#">
+            <span>Contact</span>
+          </a>
+      
+          <a href="#">
+            <span>Évènements passés</span>
+          </a>
+        </div>
+      </div>
+    
+    </header>
+    <main>
+      <div class="hero-section">
+        
+        <div class="hero-content">
+          <h1 class="hero-headline">Marathon national<br>de jeux vidéo</h1>
+          <span class="hero-text">Vous aimez jouer ? Notre prochain évènement gaming est ouvert aux réservations... Places limitées !</span>
+          <button class="btn-signup modal-btn">Je m'inscris</button>
+        </div>
+        
+        <div class="hero-img">
+          <img src="img/bg_gameon.jpg" alt="img">
+        </div>
+        <button class="btn-signup modal-btn">Je m'inscris</button>
+      </div>
+      
+      <div class="bground">
+        <div class="content">
+          <span class="close"></span>
+          <div class="modal-body">
+            <form name="reserve" id="signup" action="index.html" method="get">
+              
+              <div class="formData">
+                <label for="user-firstname">Prénom</label>
+                <br>
+                <input class="text-control" type="text" id="user-firstname" name="user-firstname" minlength="2" maxlength="20">
+                <span id="info-firstname"></span>
+                <br>
+              </div>
+              
+              <div class="formData">
+                <label for="user-lastname">Nom</label><br>
+                <input class="text-control" type="text" id="user-lastname" name="user-lastname" minlength="2" maxlength="20">
+                <span id="info-lastname"></span>
+                <br>
+              </div>
+              
+              <div class="formData">
+                <label for="user-email">E-mail</label><br>
+                <input class="text-control" type="email" id="user-email" name="user-email">
+                <span id="info-email"></span>
+                <br>
+              </div>
+              
+              <div class="formData">
+                <label for="user-birthdate">Date de naissance</label>
+                <br>
+                <input class="text-control" type="date" id="user-birthdate" name="user-birthdate">
+                <span id="info-birthdate"></span>
+                <br>
+              </div>
+              
+              <div class="formData">
+                <label for="user-nbr-tournament">À combien de tournois GameOn avez-vous déjà participé ?</label>
+                <br>
+                <input type="number" class="text-control" id="user-nbr-tournament" name="user-nbr-tournament"  min="0" max="99">
+                <span id="info-nbr-tournament"></span>
+              </div>
+              
+              
+              <div id="checkbox-cities" class="formData">
+                <p class="text-label">Dans quelles villes ?</p>
+                
+                <input class="checkbox-input" type="checkbox" id="location1" name="location" value="New York" checked>
+                <label class="checkbox-label" for="location1">
+                  <span class="checkbox-icon"></span>
+                  New York
+                </label>
+                  
+                <input class="checkbox-input" type="checkbox" id="location2" name="location" value="San Francisco">
+                <label class="checkbox-label" for="location2">
+                  <span class="checkbox-icon"></span>
+                  San Francisco
+                </label>
+                
+                <input class="checkbox-input" type="checkbox" id="location3" name="location" value="Seattle">
+                <label class="checkbox-label" for="location3">
+                  <span class="checkbox-icon"></span>
+                  Seattle
+                </label>
+                
+                <input class="checkbox-input" type="checkbox" id="location4" name="location" value="Chicago">
+                <label class="checkbox-label" for="location4">
+                  <span class="checkbox-icon"></span>
+                  Chicago
+                </label>
+                
+                <input class="checkbox-input" type="checkbox" id="location5" name="location" value="Boston">
+                <label class="checkbox-label" for="location5">
+                  <span class="checkbox-icon"></span>
+                  Boston
+                </label>
+                
+                <input class="checkbox-input" type="checkbox" id="location6" name="location" value="Portland">
+                <label class="checkbox-label" for="location6">
+                  <span class="checkbox-icon"></span>
+                  Portland
+                </label>
+                <span id="info-checkbox"></span>
+                
+              </div>
+
+              <div class="formData">
+                
+                <input class="checkbox-input" type="checkbox" id="terms-of-use" required checked>
+                <label class="checkbox2-label" for="terms-of-use">
+                  <span class="checkbox-icon"></span>
+                  J'ai lu et j'accepte les conditions générales d'utilisation.
+                </label>
+                <br>
+                <span id="info-terms-of-use"></span>
+                
+                <input class="checkbox-input" type="checkbox" id="newsletter">
+                <label class="checkbox2-label" for="newsletter">
+                  <span class="checkbox-icon"></span>
+                  Je souhaites être prévenu des prochains évènements.
+                </label>
+                <br>
+                
+              </div>
+              <label for="btn-form-submit"></label>
+              <input class="btn-submit button" type="submit" id="btn-form-submit" value="C'est parti!">
+              <span id="info-signup"></span>
+            </form>
+          
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="container-confirmation">
+        <div class="confirmation-form">
+          <p>
+            Merci !
+            <br>
+            Votre réservation a bien été prise en compte.
+          </p>
+          <input id="confirmation-close-btn" value="Retour">
+        </div>
+      </div>
+        
+    </main>
+    
+    <footer>
+      <p class="copyrights"> Copyright 2014 - 2020, GameOn Inc.</p>
+    </footer>
+    
+    <script src="/js/modal.js" async></script>
+    <script src="/js/form.js" async></script>
+    
+  </body>
+</html>
