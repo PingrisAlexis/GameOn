@@ -107,12 +107,6 @@ main {
   background: #3876ac;
 }
 
-.footer {
-  margin: 20px;
-  padding: 10px;
-  font-family: var(--font-slab);
-}
-
 /* Modal form */
 
 .button {
@@ -495,11 +489,10 @@ input {
 }
 
 footer {
+  margin-top: 2rem;
   height: 2rem;
   padding-left: 2vw;
   padding-right: 2vw;
-  margin: 0 20px;
-  text-align: center;
 }
 
 /* CONFIRMATION SUBMIT MODAL */
