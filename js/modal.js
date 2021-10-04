@@ -1,30 +1,20 @@
-//NAVBAR
-function editNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-//SIGNUP 
+//SIGNUP
 const signupModal = document.querySelector(".bground");
-const BtnLaunchSignupModal = document.querySelectorAll(".modal-btn");
-const BtnCloseSignupModal = document.querySelectorAll(".close");
+const btnLaunchSignupModal = document.querySelectorAll(".modal-btn");
+const btnCloseSignupModal = document.querySelectorAll(".close");
 
 //CONFIRMATION FORM
 const confirmationModal = document.getElementsByClassName("container-confirmation");
-const BtnCloseConfirmationModal = document.getElementById("confirmation-close-btn");
+const btnCloseConfirmationModal = document.getElementById("confirmation-close-btn");
 
 //LAUNCH SIGNUP MODAL
-BtnLaunchSignupModal.forEach((btn) => btn.addEventListener("click", launchSignupModal));
+btnLaunchSignupModal.forEach((btn) => btn.addEventListener("click", launchSignupModal));
 function launchSignupModal() {
   signupModal.style.display = "block";
 }
 
 //CLOSE SIGNUP MODAL
-BtnCloseSignupModal.forEach((btn) => btn.addEventListener("click", closeSignupModal));
+btnCloseSignupModal.forEach((btn) => btn.addEventListener("click", closeSignupModal));
 function closeSignupModal() {
   signupModal.style.display = document.querySelector(".select-hide");
 }
@@ -36,8 +26,7 @@ function displayConfirmationModal() {
 }
 
 //CLOSE CONFIRMATION MODAL, AND RESET THE FORM
-BtnCloseConfirmationModal.addEventListener('click', resetSignupModal);
-
+btnCloseConfirmationModal.addEventListener('click', resetSignupModal);
 function resetSignupModal() {
   document.querySelector("form").reset();
   

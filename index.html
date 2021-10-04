@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Reservation</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans" >
   </head>
   <body>
     <header class="topnav" id="myTopnav">
@@ -14,7 +14,7 @@
         <img alt="logo GameOn" src="img/logo_gameon.png">
       </div>
       <div class="main-navbar">
-        <a href="javascript:void(0);" class="icon" onclick="editNav()">
+        <a class="icon" id="menu-hamburger">
           <i class="fa fa-bars"></i>
         </a>
         <div>
@@ -117,8 +117,12 @@
                   <span class="checkbox-icon"></span>
                   Portland
                 </label>
+                <br>
+
                 <span id="info-checkbox"></span>
               </div>
+
+
               <div class="formData">
                 <input class="checkbox-input" type="checkbox" id="terms-of-use" required checked>
                 <label class="checkbox2-label" for="terms-of-use">
@@ -148,6 +152,7 @@
             <br>
             Votre réservation a bien été prise en compte.
           </p>
+          <label for="confirmation-close-btn"></label>
           <input id="confirmation-close-btn" value="Retour">
         </div>
       </div>
@@ -157,5 +162,6 @@
     </footer>
     <script src="js/modal.js" async></script>
     <script src="js/form.js" async></script>
+    <script src="js/navBar.js" async></script>
   </body>
 </html>
