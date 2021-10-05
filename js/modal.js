@@ -46,6 +46,7 @@ function resetSignupModal() {
   
   infoNbrTournament.previousElementSibling.style.border = "none";
   infoNbrTournament.textContent = "";
-  
+
+  arrayCitiesCheckbox = [];
   citiesCheckboxContainer.style.display = "none";
 }
