@@ -34,9 +34,9 @@ function controlFirstname() {
 			
 	} 
 	else if (firstname.value.trim().length < 2) {
-		infoFirstname.textContent = "Le prénom doit avoir au moins deux caractéres";
-		infoFirstname.style.color = "red";
-		infoFirstname.previousElementSibling.style.border = "solid red 0.19rem";
+			infoFirstname.textContent = "Le prénom doit avoir au moins deux caractéres";
+			infoFirstname.style.color = "red";
+			infoFirstname.previousElementSibling.style.border = "solid red 0.19rem";
 
 		return false;
 		
@@ -189,29 +189,27 @@ function controlNbrTournament () {
 nbrTournament.addEventListener('input', function () {
 
 	if (nbrTournament.value > 0) {
-		citiesCheckboxContainer.style.display = "block";
+			citiesCheckboxContainer.style.display = "block";
 
 	}
 	else {
-		citiesCheckboxContainer.style.display = "none";
+			citiesCheckboxContainer.style.display = "none";
 	}
 })
-
 
 //LISTENING ON CITIES CHECKBOXES VALUES
 citiesCheckboxBtns.forEach(function(checkbox) {
 
 	checkbox.addEventListener('change', function() {
 		
-    arrayCitiesCheckbox = 
-      Array.from(citiesCheckboxBtns) // Convert checkboxes to an array to use filter and map methods.
-      .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
-      .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
-			
+    	arrayCitiesCheckbox =
+      		Array.from(citiesCheckboxBtns) // Convert checkboxes to an array to use filter and map methods.
+				.filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
+				.map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
+
 		return arrayCitiesCheckbox;
   })
 })
-
 
 //LISTENING ON TERMS OF USE CHECKBOX
 validTermsOfUse.addEventListener('change', function() {
@@ -275,6 +273,5 @@ function validation(event){
 		}
 
 		displayConfirmationModal();
-
 	}
 }
