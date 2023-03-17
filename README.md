@@ -19,3 +19,5 @@
 ### Skills assessed:
 
 - Programming in JavaScript
+
+- Control the value of inputs's form
