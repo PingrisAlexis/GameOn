@@ -1,4 +1,4 @@
-# PingrisAlexis_04_14092021
+# GameOn
 
 ## Project 4 Front-End OpenClassrooms - Create a landing page with Javascript.
 
