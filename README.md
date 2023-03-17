@@ -1,6 +1,6 @@
-# GameOn
+# Project 1/9 Front End Developer Path
 
-## Project 4 Front-End OpenClassrooms - Create a landing page with Javascript.
+## Create a landing page with Javascript.
 
 ### Specifications:
 
