@@ -1,4 +1,4 @@
-# Project 1/9 Front End Developer Path
+# Project 1/9 - Front End Developer Path
 
 ## Create a landing page with Javascript.
 
